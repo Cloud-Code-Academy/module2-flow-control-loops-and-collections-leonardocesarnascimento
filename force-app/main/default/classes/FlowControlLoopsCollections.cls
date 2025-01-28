@@ -190,7 +190,7 @@ public with sharing class FlowControlLoopsCollections {
         return sumUpToLimitResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 9
      * Generate String "Hello World!" three times, with each occurrence separated by a semicolon.
      * Example: returnHelloWorld() should return "Hello World!; Hello World!; Hello World!; "
@@ -198,15 +198,14 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String returnHelloWorld() {
         // Initialize the result String
+        String returnHelloWorldResult = '';
 
         // Use a for loop to append 'Hello World!;' to the result string three times
-        /* 
-         for (){
-            
-         }
-        */
+         for (Integer i = 0; i < 3; i++){
+            returnHelloWorldResult = returnHelloWorldResult + 'Hello World!; ';
+         }        
 
-        return null; // Replace null with the variable you used to store the result
+        return returnHelloWorldResult; // Replace null with the variable you used to store the result
     }
 
     /**
