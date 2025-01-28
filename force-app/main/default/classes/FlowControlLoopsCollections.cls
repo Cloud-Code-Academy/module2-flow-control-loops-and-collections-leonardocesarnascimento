@@ -36,7 +36,7 @@ public with sharing class FlowControlLoopsCollections {
         }
     }
 
-    /**
+    /**DONE!!!
      * Question 2
      * Checks if a person is eligible to vote based on their age.
      * A person is eligible to vote if they are 18 years old or older.
@@ -53,7 +53,7 @@ public with sharing class FlowControlLoopsCollections {
         }
     }
 
-    /**
+    /**DONE!!!
      * Question 3
      * Finds the maximum of two numbers.
      * If both numbers are equal, it returns that number.
@@ -65,12 +65,18 @@ public with sharing class FlowControlLoopsCollections {
     public static Integer findMax(Integer num1, Integer num2) {
         // Initialize largestNum as null
         Integer largestNum = null;
-
-        return null; // Replace null with the variable you used to store the result
+        if (num1 == null || num2 == null) {
+            return null;
+        }
+        if (num1 > num2) {
+            largestNum = num1;
+        } else {
+            largestNum = num2;
+        }
+        return largestNum; // Replace null with the variable you used to store the result
     }
 
-
-    /**
+    /**DONE!!!
      * Question 4
      * Checks if a number is positive, negative, or zero.
      * If the number is null, return null.
@@ -79,7 +85,19 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Positive", "Negative", or "Zero", or null if the number is null.
      */
     public static String checkNumber(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String checkNumberResult;
+
+        if (a == null) {
+            checkNumberResult = null;
+        } else if (a == 0) {
+            checkNumberResult = 'Zero';
+        } else if (a < 0) {
+            checkNumberResult = 'Negative';
+        } else {
+            checkNumberResult = 'Positive';
+        }
+        
+        return checkNumberResult; // Replace null with the variable you used to store the result
     }
 
     /**
