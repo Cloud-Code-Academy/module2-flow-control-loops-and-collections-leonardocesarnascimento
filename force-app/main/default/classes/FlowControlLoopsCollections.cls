@@ -122,7 +122,7 @@ public with sharing class FlowControlLoopsCollections {
         return checkEvenOddResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 6
      * Checks if a string is empty, null, or contains text.
      * Example: checkString("") should return "Empty"
@@ -130,7 +130,16 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the input is "Empty", "Null", or "Contains Text".
      */
     public static String checkString(String a) {
-        return null; // Replace null with the variable you used to store the result
+        String checkSTringResult;
+
+        if (a == '') {
+            checkSTringResult = 'Empty';
+        } else if (a == null) {
+            checkSTringResult = 'Null';
+        } else {
+            checkSTringResult = 'Contains Text';
+        }
+        return checkSTringResult; // Replace null with the variable you used to store the result
     }
 
     /**
