@@ -100,7 +100,7 @@ public with sharing class FlowControlLoopsCollections {
         return checkNumberResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 5
      * Checks if a number is even or odd.
      * If the number is null, return null.
@@ -109,7 +109,17 @@ public with sharing class FlowControlLoopsCollections {
      * @return A string indicating whether the number is "Even" or "Odd", or null if the number is null.
      */
     public static String checkEvenOdd(Integer a) {
-        return null; // Replace null with the variable you used to store the result
+        String checkEvenOddResult;
+
+        if (a == null) {
+            checkEvenOddResult = null;
+        } else if (math.mod(a, 2) != 0) {
+            checkEvenOddResult = 'Odd';
+        } else {
+            checkEvenOddResult = 'Even';
+        }
+        
+        return checkEvenOddResult; // Replace null with the variable you used to store the result
     }
 
     /**
