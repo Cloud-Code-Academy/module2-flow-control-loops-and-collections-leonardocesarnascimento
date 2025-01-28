@@ -208,7 +208,7 @@ public with sharing class FlowControlLoopsCollections {
         return returnHelloWorldResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 10
      * Generate a string where the input string is repeated the given number of times, with each
 	 * repetition separated by a semicolon. 
@@ -220,17 +220,20 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static String repeatString(String inputString, Integer repeatCount) {
         // Initialize the result String
+        String repeatStringResult = '';
 
         // Use a for loop to append the inputString to the result string repeatCount times
-        /*
-        for () {
-
+        for (Integer i = 1; i <= repeatCount; i++){           
             // If it is not the last iteration, add a semicolon to separate the strings
-        }
-        */
+            if (i == repeatCount) {
+                repeatStringResult = repeatStringResult + inputString;
+            } else {
+                repeatStringResult = repeatStringResult + inputString + '; ';
+            }
+        }      
 
         // Return the final result string
-        return null; // Replace null with the variable you used to store the result
+        return repeatStringResult; // Replace null with the variable you used to store the result
     }
 
     /**
