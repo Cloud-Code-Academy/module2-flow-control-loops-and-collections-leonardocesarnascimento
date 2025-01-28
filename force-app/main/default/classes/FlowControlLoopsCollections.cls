@@ -173,7 +173,7 @@ public with sharing class FlowControlLoopsCollections {
     }
 
 
-    /**
+    /**DONE!!!
      * Question 8
      * Sum all the integers up to a given limit.
      * Example: sumUpToLimit(5) should return 15
@@ -181,13 +181,13 @@ public with sharing class FlowControlLoopsCollections {
      * @return The sum of all integers up to the limit.
      */
     public static Integer sumUpToLimit(Integer intLimit) {
-        /* 
-         for (){
-            
-         }
-        */
+        Integer sumUpToLimitResult = 0;
 
-        return null; // Replace null with the variable you used to store the result
+         for (Integer i = 1; i <= intLimit; i++){
+            sumUpToLimitResult = sumUpToLimitResult + i;            
+         }
+        
+        return sumUpToLimitResult; // Replace null with the variable you used to store the result
     }
 
     /**
