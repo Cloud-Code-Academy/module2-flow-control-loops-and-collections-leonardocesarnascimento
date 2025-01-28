@@ -444,7 +444,7 @@ public with sharing class FlowControlLoopsCollections {
         return employeeSalary.get(employeeName); // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 20
      * Create a map where the keys are the names of employees and the values are their salaries.
      * Then, iterates over the map and checks if an employee's salary is more than 55000.
@@ -463,15 +463,25 @@ public with sharing class FlowControlLoopsCollections {
         // add Jane Smith => 60000
         // add Sam Brown => 55000
         // add Alice Johnson => 65000
+        employeeSalaries.put('John Doe', 50000);
+        employeeSalaries.put('Jane Smith', 60000);
+        employeeSalaries.put('Sam Brown', 55000);
+        employeeSalaries.put('Alice Johnson', 65000);
 
         // Initialize a list to store the names of high paid employees
+        List<String> highPaidEmployees = new List<String>();
 
         // Iterate over the Map using a for loop
+        for (String employeeName : employeeSalaries.keySet()) {
             // Check if the salary of the employee is more than 55000
+            if (employeeSalaries.get(employeeName) > 55000) {
                 // Add the employee to the list of high paid employees
+                highPaidEmployees.add(employeeName);
+            }
+        }
 
         // Return the list of high paid employees
-        return null; // Replace null with the variable you used to store the result
+        return highPaidEmployees; // Replace null with the variable you used to store the result
     }
 
 }
