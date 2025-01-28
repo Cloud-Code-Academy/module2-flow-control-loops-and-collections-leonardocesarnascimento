@@ -142,7 +142,7 @@ public with sharing class FlowControlLoopsCollections {
         return checkSTringResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 7
      * Determines the grade based on the score.
      * Grade A if score is greater than or equal to 90.
@@ -155,7 +155,21 @@ public with sharing class FlowControlLoopsCollections {
      * @return The grade for the given score.
      */
     public static String determineGrade(Integer score) {
-        return null; // Replace null with the variable you used to store the result
+        String determineGradeResult;
+
+        if (score >= 90) {
+            determineGradeResult = 'A';
+        } else if (score >= 80) {
+            determineGradeResult = 'B';
+        } else if (score >= 70) {
+            determineGradeResult = 'C';
+            } else if (score >= 60) {
+            determineGradeResult = 'D';
+        } else {
+            determineGradeResult = 'F';
+        }
+
+        return determineGradeResult; // Replace null with the variable you used to store the result
     }
 
 
