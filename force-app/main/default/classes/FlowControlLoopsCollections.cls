@@ -312,7 +312,7 @@ public with sharing class FlowControlLoopsCollections {
         return stringSet; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 15
      * Iterates over a list of integers and sums only the positive integers.
      * Example: sumPositiveIntegers() should return 12
@@ -320,12 +320,19 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer sumPositiveIntegers() {
         List<Integer> numbers = new List<Integer>{-1, 2, -3, 4, -5, 6}; //DO NOT CHANGE
-
+        Integer sumPositiveIntegersResult = 0;
         // Loop through the list of integers
-            // if the number is negative skip this iteration
-        
+        for (Integer checkPositiveIntegersResult : numbers) {
+            // if the number is negative skip this iteration of the loop
+            if (checkPositiveIntegersResult < 0) {
+                continue;
+            } else {
+                // add the absolute value of the integer to the sum
+                sumPositiveIntegersResult += checkPositiveIntegersResult;
+            }        
+        }       
 
-        return null; // Replace null with the variable you used to store the result
+        return sumPositiveIntegersResult; // Replace null with the variable you used to store the result
     }
 
     /**
