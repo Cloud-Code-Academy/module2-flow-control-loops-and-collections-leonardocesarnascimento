@@ -335,7 +335,7 @@ public with sharing class FlowControlLoopsCollections {
         return sumPositiveIntegersResult; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 16
      * Iterates over a list of strings and searches for a specific word. Once found, it breaks the loop.
      *  Example: findWordInList("World", ['Hello', 'World', 'Goodbye']) should return 1
@@ -345,11 +345,22 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static Integer findWordInList(String wordToFind, List<String> words) {
         // The variable to store the index of the word
+        Integer wordIndex = 0;
 
         // Loop through the list of words
-            // If the current word is the word to find, exit the loop
+        for (Integer i = 0; i < words.size(); i++) {
+            // If the current word is the one we are looking for, store the index
+            if (words[i] == wordToFind) {
+                wordIndex = i;
+                
+                // If the current word is the word to find, exit the loop
+                break;
+            } else {
+                wordIndex = -1;
+            }
+        }
 
-        return null; // Replace null with the variable you used to store the result
+        return wordIndex; // Replace null with the variable you used to store the result
     }
 
     /**
