@@ -273,7 +273,7 @@ public with sharing class FlowControlLoopsCollections {
         return numberList; // Replace null with the variable you used to store the result
     }
 
-    /**
+    /**DONE!!!
      * Question 13
      * Create a list filled with integers based on the input parameter.
      * Example: createIntegerList(5) should return [1, 2, 3, 4, 5] 
@@ -282,14 +282,14 @@ public with sharing class FlowControlLoopsCollections {
      */
     public static List<Integer> createIntegerList(Integer n) {
         // Create a new list of integers 
-
-        /*
-        for() {
+        List<Integer> numberList = new List<Integer>();
+        
+        for(Integer i = 1; i <= n; i++) {
             //add integer to the list
-        }
-        */ 
+            numberList.add(i);
+        }         
 
-        return null; // Replace null with the variable you used to store the result
+        return numberList; // Replace null with the variable you used to store the result
     }
 
     /**
